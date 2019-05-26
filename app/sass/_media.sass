@@ -1,0 +1,149 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
++media-breakpoint-down(lg)
+
++media-breakpoint-down(md)
+	.header
+		&__title
+			margin-top: 40px
+	.form
+		&__right
+			width: 100%
+			&_group
+			display: flex
+			justify-content: space-between
+			flex-wrap: wrap
+			align-items: flex-start
+			input[name="city"]
+				width: 370px
+			input[name="index"]
+				width: 190px
+	.footer
+		p
+			width: auto
+			margin-left: 30px
+
++media-breakpoint-down(sm)
+	.header
+		&__title
+			font-size: 26px
+			h1
+				font-size: 26px
+	.form
+		&__row
+			padding: 0
+			margin-top: 25px
+		&__right
+			&_group
+				input[name="city"]
+					width: 330px
+				select[name="country"]
+					width: 170px
+				input[name="index"]
+					width: 150px
+				input[name="address"]
+					width: 350px
+		&__btn-wrap
+			width: 100%
+			margin-right: 0
+			padding-left: 0
+	.footer
+		flex-wrap: wrap
+		justify-content: center
+		p
+			margin-left: 0
+			width: 100%
+			order: -1
+			margin-bottom: 30px
+
++media-breakpoint-down(xs)
+	.header
+		&__topline
+			position: relative
+	.menu
+		&__list
+			flex-direction: column
+			position: absolute
+			left: 0
+			top: 100%
+			background-color: #eaeaea
+			align-items: flex-start
+			padding: 30px 50px
+			border: 1px solid $text
+			transform-origin: top
+			transform: scaleY(0)
+			transition: .3s
+			width: 100%
+			&_open
+				transform: scaleY(1)
+		&__item
+			margin-bottom: 20px
+			&:not(:first-of-type)
+				margin-left: 0
+		&__btn
+			display: flex
+			height: 20px
+			width: 30px
+			padding: 0
+			background: none
+			border: none
+			flex-direction: column
+			justify-content: space-between
+			span
+				height: 3px
+				width: 30px
+				background-color: $text
+			&::before, &::after
+				content: ''
+				height: 3px
+				width: 30px
+				background-color: $text
+	.steps
+		flex-direction: column
+		font-size: 16px
+		padding-left: 0
+		&__item
+			&:not(:first-of-type)
+				margin-left: 0
+				margin-top: 20px
+				&::before
+					content: $arrow-bottom
+					left: 50%
+					margin-left: -8px
+					top: -20px
+	.form
+		font-size: 16px
+		&__file-container
+			height: 180px
+		&__file-inner
+			text-align: center
+			span
+				display: block
+				width: 100%
+				text-align: center
+		&__right
+			&_group
+				input[name="city"]
+					width: 100%
+				select[name="country"]
+					width: 100%
+				input[name="index"]
+					width: 100%
+				input[name="address"]
+					width: 100%
+				
+
+
+
+/*==========  Mobile First  ==========*/
+
++media-breakpoint-up(sm)
+
++media-breakpoint-up(md)
+
++media-breakpoint-up(lg)
+
++media-breakpoint-up(xl)

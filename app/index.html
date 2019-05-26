@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>Заявка - Современная кириллица 2014</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	
+	<meta name="theme-color" content="#000">
+
+	<link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body>
+
+	<header class="header container">
+		<div class="header__topline">
+			<ul class="lang nolist">
+				<li class="lang__item"><a href="" class="lang__link">EN</a></li>
+				<li class="lang__item"><a href="" class="lang__link lang__link_active">RU</a></li>
+			</ul>
+			<nav class="menu">
+				<button class="menu__btn"><span></span></button>
+				<ul class="menu__list nolist">
+					<li class="menu__item"><a href="" class="menu__link menu__link_active">Заявка</a></li>
+					<li class="menu__item"><a href="" class="menu__link">Условия</a></li>
+					<li class="menu__item"><a href="" class="menu__link">Жюри</a></li>
+					<li class="menu__item"><a href="" class="menu__link">Контакты</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="header__title">
+			<a href=""><img src="img/logo.png" alt="Современная кириллица"></a>
+			<h1>Современная кириллица 2014</h1>
+			<p>Международный конкурс шрифтового дизайна</p>
+		</div>
+	</header>
+
+	<main>
+		
+		<section class="request container">
+			<h2 class="request__title"><img src="img/request.png" alt="Заявка"></h2>
+			<ul class="steps nolist">
+				<li class="steps__item">Как составить и оформить проект</li>
+				<li class="steps__item steps__item_active">Загрузка проекта</li>
+				<li class="steps__item">Характеристики проекта</li>
+			</ul>
+			<form action="" class="form">
+				<div id="file-container" class="form__file-container">
+					<img src="img/upload.png" alt="Загрузить файл">
+					<div id="file-inner" class="form__file-inner">
+						<span>Перетащите проект в эту область или</span>
+						<input id="file-input" type="file" name="file">
+						<label for="file-input">выберите файл</label>
+					</div>
+				</div>
+				<fieldset class="form__fieldset">
+					<legend class="form__legend"><span>Представьтесь, пожалуйста</span></legend>
+					<div class="form__row">
+						<label for="name">Фамилия, имя и отчество</label>
+						<input class="form__right check-input" id="name" type="text" name="name">
+					</div>
+					<div class="form__row">
+						<label for="company">Название компании</label>
+						<div class="form__right">
+							<input class="form__right" id="company" type="text" name="company">
+							<span class="form__subtext">Заполните, если вы представляете компанию-производителя шрифта</span>
+						</div>
+					</div>
+					<div class="form__row form__row_group">
+						<label for="city">Контактная информация</label>
+						<div class="form__right form__right_group">
+							<input id="city" class="check-input" type="text" name="city" placeholder="Ваш город">
+							<select name="country" class="check-input">
+								<option value="Страна">Страна</option>
+								<option value="Россия">Россия</option>
+							</select>
+							<input class="check-input" type="text" name="index" placeholder="Индекс">
+							<input class="check-input" type="text" name="address" placeholder="Почтовый адрес">
+							<input class="check-input" type="tel" name="phone" placeholder="Телефон">
+							<input class="check-input" type="email" name="email" placeholder="Электронная почта">
+						</div>
+					</div>
+				</fieldset>
+				<div class="form__btn-wrap">
+					<input id="check-btn" type="submit" value="Далее →">
+					<p id="check-block"></p>
+				</div>
+			</form>
+		</section>
+
+	</main>
+
+	<footer class="footer container">
+		<form action="" class="footer__form">
+			<input type="text" name="footer_email" placeholder="Быть в курсе событий">
+			<input type="submit" value="ОК">
+		</form>
+		<p>Организаторы конкурса: компания <a href="">«Паратайп»</a> и журнал <a href="">«Шрифт»</a> при поддержке <a href="">Федерального агентства по печати и массовым коммуникациям</a> и компании <a href="">«Яндекс»</a></p>
+	</footer>
+
+	<script src="js/scripts.min.js"></script>
+
+</body>
+</html>
